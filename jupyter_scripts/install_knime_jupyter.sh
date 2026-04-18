@@ -40,3 +40,4 @@ source /root/miniforge3/bin/activate
 conda create -y -n knime-dl python=3.11
 conda activate knime-dl
 pip install ipython nbformat scipy numpy pandas scikit-learn jupyterlab
+echo "Path do Conda: /root/miniforge3/envs/knime-dl/bin/python"
