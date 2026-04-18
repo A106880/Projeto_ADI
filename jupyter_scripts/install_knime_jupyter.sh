@@ -16,7 +16,7 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y \
 
 pip3 install jupyter-remote-desktop-proxy
 
-mkdir -p "$HOME/apps" "$HOME/downloads" "$HOME/.vnc"
+mkdir -p "$HOME/apps" "$HOME/downloads" "$HOME/.vnc" "/workspace/knime-workflows"
 
 cat > "$HOME/.vnc/xstartup" <<'EOF'
 #!/bin/sh
@@ -29,10 +29,6 @@ chmod +x "$HOME/.vnc/xstartup"
 
 mkdir -p ~/apps ~/downloads
 cd ~/downloads
-
-mkdir -p /workspace/knime-workflows
-cd /workspace/knime-workflows
-
 KNIME_URL="https://download.knime.com/analytics-platform/linux/knime_5.11.0.linux.gtk.x86_64.tar.gz"
 wget -O knime.tar.gz "$KNIME_URL"
 tar -xzf knime.tar.gz -C ~/apps
