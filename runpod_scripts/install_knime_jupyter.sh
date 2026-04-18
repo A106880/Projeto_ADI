@@ -44,7 +44,3 @@ source /root/miniforge3/bin/activate
 conda create -y -n knime-dl python=3.11
 conda activate knime-dl
 pip install ipython nbformat scipy numpy pandas scikit-learn jupyterlab
-
-export DISPLAY=:1
-export XAUTHORITY=$HOME/.Xauthority
-
