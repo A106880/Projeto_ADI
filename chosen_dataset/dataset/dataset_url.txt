@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a07417abd2657d068f236c323f60a99a36425cb2ef207ddd78c77c599896b232
-size 88
+https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
